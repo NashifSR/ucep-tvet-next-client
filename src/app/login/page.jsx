@@ -1,5 +1,6 @@
 // components/LoginPage.js
 "use client"
+import Link from 'next/link';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -32,8 +33,8 @@ const login = () => {
               type="email"
               id="email"
               name="email"
-              {...register('email', { 
-                required: "Email is required", 
+              {...register('email', {
+                required: "Email is required",
                 pattern: {
                   value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
                   message: "Please enter a valid email address"
@@ -52,7 +53,7 @@ const login = () => {
               type="password"
               id="password"
               name="password"
-              {...register('password', { 
+              {...register('password', {
                 required: "Password is required",
                 minLength: {
                   value: 6,
@@ -78,9 +79,9 @@ const login = () => {
 
           {/* Forgot Password Link */}
           <div className="text-center">
-            <a href="#" className="text-blue-600 hover:underline">
-              Forgot your password?
-            </a>
+            <p className="">
+              Don't have an account? <Link className='text-blue-600 hover:underline' href={"/registration"}>Register</Link>
+            </p>
           </div>
         </form>
       </div>

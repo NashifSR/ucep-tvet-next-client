@@ -17,7 +17,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-gray-800 text-white py-8 px-3">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Footer Left - About */}
         <div className="mb-6 md:mb-0">

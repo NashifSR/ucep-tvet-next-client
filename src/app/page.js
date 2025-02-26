@@ -6,7 +6,7 @@ import FAQSection from "./components/FAQsection";
 
 export default function Home() {
   return (
-    <div className="p-3">
+    <div className="">
       <HeroSection></HeroSection>
       <FeaturesSection></FeaturesSection>
       <CTASection></CTASection>
